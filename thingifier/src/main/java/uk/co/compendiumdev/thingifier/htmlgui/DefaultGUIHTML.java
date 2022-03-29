@@ -127,6 +127,7 @@ public class DefaultGUIHTML {
     }
 
     // Template functions
+    // TODO : Remove unused private method
     private String heading(final int level, final String text) {
         return String.format("<h%1$d>%2$s</h%1$d>%n", level, text);
     }
