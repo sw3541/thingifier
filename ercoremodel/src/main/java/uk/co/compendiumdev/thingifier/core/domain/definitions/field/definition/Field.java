@@ -124,7 +124,6 @@ public final class Field {
     }
 
     // allowedToSetIds is a bit of hack - refactor other code so not required
-    // TODO : Remove the empty if statements from the method
     public ValidationReport validate(FieldValue value, boolean allowedToSetIds) {
 
 
@@ -162,9 +161,6 @@ public final class Field {
                 validateIntegerValue(value, report);
             }
 
-            if(type == FieldType.STRING){
-                // length is validated by a rule
-            }
 
             if (type == FieldType.FLOAT) {
                 validateFloatValue(value, report);
