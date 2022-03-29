@@ -314,7 +314,6 @@ public class MainImplementation {
         }
     }
 
-    // FIXME :  Store the return of String.format in variable
     public void configureThingifierWithProfile() {
 
         // we hard coded a profile
@@ -359,7 +358,8 @@ public class MainImplementation {
         if(profileToUse!=null){
             thingifier.configureWithProfile(profileToUse);
         }else{
-            String.format("Will configure app as default profile");
+            String s = String.format("Will configure app as default profile");
+            System.out.println(s);
         }
     }
 
