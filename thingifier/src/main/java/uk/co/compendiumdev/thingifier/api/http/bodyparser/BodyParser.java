@@ -35,6 +35,7 @@ public class BodyParser {
     }
 
 
+    // TODO  : change the iterator from keyset to entryset
     private Map<String, String> stringMap(final Map<String, Object> args) {
         // todo: configuration to reject if wrong types for field definitions
         // default should be to handle and convert
