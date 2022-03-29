@@ -10,6 +10,7 @@ public class AcceptHeaderValidator {
         this.apiConfig = apiConfig;
     }
 
+    // TODO : Combine nested if statement
     public ApiResponse validate(final String acceptHeader) {
         final AcceptHeaderParser accept = new AcceptHeaderParser(acceptHeader);
         ApiResponse apiResponse=null;
