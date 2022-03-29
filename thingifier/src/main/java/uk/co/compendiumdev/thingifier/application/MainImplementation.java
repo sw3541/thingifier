@@ -314,6 +314,7 @@ public class MainImplementation {
         }
     }
 
+    // FIXME :  Store the return of String.format in variable
     public void configureThingifierWithProfile() {
 
         // we hard coded a profile
