@@ -61,6 +61,7 @@ public class BodyParser {
     // since complex keys can be duplicated,
     // we can't use a hashmap, so we are using a list of map entries
     // the map entries could be a custom Key Value Pair implementation if we wanted
+    // FIXME : simply return the value
     public List<Map.Entry<String,String>> getFlattenedStringMap() {
         List<Map.Entry<String,String>> stringsInMap = flattenToStringMap("", getMap());
         return stringsInMap;
