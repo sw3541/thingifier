@@ -68,13 +68,12 @@ public class RelationshipDefinition {
     /*
         A Relationship is known as any of its vector names
      */
-    // TODO : Remove the unnecessary case change
     public boolean isKnownAs(String relationshipName) {
 
-        if (fromTo.getName().toLowerCase().equalsIgnoreCase(relationshipName)) {
+        if (fromTo.getName().equalsIgnoreCase(relationshipName)) {
             return true;
         }
-        if (toFrom != null && toFrom.getName().toLowerCase().equalsIgnoreCase(relationshipName)) {
+        if (toFrom != null && toFrom.getName().equalsIgnoreCase(relationshipName)) {
             return true;
         }
         return false;
