@@ -19,6 +19,7 @@ final public class ApiResponseAsXml {
         this.xmlThing = new XmlThing(jsonThing);
     }
 
+    // TODO : Remove the print statement
     public String getXml() {
 
         if (!apiResponse.hasABody()) {
