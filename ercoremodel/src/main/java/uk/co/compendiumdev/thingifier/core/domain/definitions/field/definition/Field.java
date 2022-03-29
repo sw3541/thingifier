@@ -124,6 +124,7 @@ public final class Field {
     }
 
     // allowedToSetIds is a bit of hack - refactor other code so not required
+    // TODO : Remove the empty if statements from the method
     public ValidationReport validate(FieldValue value, boolean allowedToSetIds) {
 
 
