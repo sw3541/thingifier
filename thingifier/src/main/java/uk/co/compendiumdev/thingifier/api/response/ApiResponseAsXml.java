@@ -65,7 +65,7 @@ final public class ApiResponseAsXml {
                 output = getErrorMessageXml(e.getMessage());
             }
 
-            System.out.println(output);
+           // System.out.println(output);
 
             return output;
         } else {
@@ -80,7 +80,7 @@ final public class ApiResponseAsXml {
                 output = getErrorMessageXml(e.getMessage());
             }
 
-            System.out.println(output);
+//            System.out.println(output);
 
             return output;
         }
